@@ -1,0 +1,75 @@
+body, html {
+    margin: 0;
+    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+    background: #F8F0E3;
+}
+ul {
+    margin: 150px auto 0;
+    padding: 0;
+    list-style: none;
+    display: table;
+    width: 600px;
+    text-align: center;
+}
+li {
+    display: table-cell;
+    position: relative;
+    padding: 15px 0;
+}
+a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
+/*---- Welcome Page ----*/
+.container {
+    position: center;
+    font-family: 'Poppins' 'Raleway';
+    font-weight: 500;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 250px;
+    right: 100px;
+    background-color: rgba(231, 189, 189, 0.507);
+    color: rgb(43, 19, 19);
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+/* ---- Footer ----*/
+#footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    text-decoration: none;
+    text-align: center;
+}
